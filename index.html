@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop project</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">	
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="logo">
+                        <a href="#logo">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="#">Home</a></li>
+                            <li class="products">
+                                <a class="products-link" href="#">Products
+                                    <div class="arrow-down"></div>
+                                </a>
+                                    <ul class="menu-products">
+                                        <li><a href="#">Lorem ipsum dolor</a></li>
+                                        <li><a href="#">Sit amet</a></li>
+                                        <li><a href="#">Consectetur adipisicing</a></li>
+                                        <li><a href="#">Tempor incididunt</a></li>
+                                        <li><a href="#">Dolore magna aliqua</a></li>
+                                        <li><a href="#">Ut enim ad minim veniam</a></li>
+                                        <li><a href="#">Quis nostrud</a></li>
+                                    </ul>
+                            </li>
+                            <li><a href="#">Payment</a></li>
+                            <li><a href="#">Shipping</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-3">
+                    <form action="">
+                        <div class="search search-block">
+                            <input type="text" name="submit" class="search-element" placeholder="search">
+                            <button class="search-element"></button>
+                        </div>
+                        <div class="search-block">
+                            <button class="basket"><a href="#"></a>
+                                <div class="basket-counter" id="products-count">0</div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+   </header>
+   <main class="main">
+        <div class="container">
+            <div class="col-12">
+                <div class="fade">
+                    <div>Slider 1</div>
+                    <div>Slider 2</div>
+                    <div>Slider 3</div>
+                    <div>Slider 4</div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <!-- menu -->
+        <div class="container container-menu">
+            <!-- filter -->
+            <div class="col-3 variation menu-content">
+                <div>
+                    <div class="row">
+                        <h3 class="filter-name">DEVICE TYPE</h3>
+                        <div class="filter-option">
+                            <input type="checkbox" id="laptop">
+                            <label for="laptop"><span>Laptop</span></label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="tablet">
+                            <label for="tablet"><span>Tablet</span></label>
+                        </div>
+                        <div class="empty"></div>
+                        <h3 class="filter-name">COLOR</h3>
+                        <div class="filter-option">
+                            <input type="checkbox" id="black">
+                            <label for="black"><span>Black</span></label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="red">
+                            <label for="red"><span>Red</span></label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="green">
+                            <label for="green"><span>Green</span></label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="blue">
+                            <label for="blue"><span>Blue</span></label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="orange">
+                            <label for="orange"><span>Orange</span></label>
+                        </div>
+                        <div class="empty"></div>
+                        <h3 class="filter-name">RAM</h3>
+                        <div class="filter-option">
+                            <input type="checkbox" id="1gb">
+                            <label for="1gb"><span>1GB</span></label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="2gb">
+                            <label for="2gb"><span>2GB</span></label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="4gb">
+                            <label for="4gb"><span>4GB</span></label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="6gb">
+                            <label for="6gb"><span>6GB</span></label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="8gb">
+                            <label for="8gb"><span>8GB</span></label>
+                        </div>
+                        <div class="load-more a1">
+                            <button >
+                                <a href="#"><span>Show more option...</span></a>
+                            </button>
+                        </div>
+                        <div class="button-products">
+                            <button class="submit-button">SUBMIT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- prosuts  -->
+            <div class="col-9 products-menu menu-content">
+                <div class="col-12">
+                    <div class="menu-link">
+                        <p><a href="#">Home page</a></p>
+                        <p class="menu-link-symbol">></p>
+                        <p><a href="#">Products</a></p>
+                        <p class="menu-link-symbol">></p>
+                        <p><a href="#">Laptops and Tablets</a></p>
+                    </div>
+                </div>
+                <!-- header menu information -->
+                <div class="title-and-options">
+                    <div class="col-8">
+                        <div class="main-header">
+                            <h1 class="products-title">Laptops and Tablets</h1>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="main-header">
+                            <select>
+                                <option>sort by price</option>
+                                <option>sort by name</option>
+                                <option>sort by date</option>
+                                <option>sort by population</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- items -->
+                <div class="items">
+                    <!-- item 1 -->
+                    <div class="col-4">
+                        <div class="one-item">
+                            <div class="image">
+                                <img src="img/device-1.png" alt="device 1">
+                                <ul class="icons-item">
+                                    <li><button class="square-icon"></button></li>
+                                    <li><button class="like-icon liked"></button></li>
+                                 </ul>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="device-title">
+                                    <h2>#1 Device Name</h2>
+                                </div>
+                                <div class="description">
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                </div>
+                                <div class="type item-information">
+                                    <H4>TYPE: <span>Laptop</span></H4>
+                                </div>
+                                <div class="screen-size item-information">
+                                    <H4>SCREEN SIZE: <span>7 inches</span></H4>
+                                </div>
+                                <div class="ram item-information">
+                                    <H4>RAM: <span>1 GB</span></H4>
+                                </div>
+                                <div class="price">
+                                    <h2>$599<span>25</span></h2>
+                                </div>
+                                <div class="product-quantity">
+                                    <button class="decrement">-</button>
+                                    <input  type="text" readonly value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <div class="button-products">
+                                    <button class="item-button more-details">MORE DETAILS</button>
+                                    <button class="item-button add-to-card">ADD TO CARD
+                                        <div class="basket-white"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="col-4">
+                            <div class="one-item">
+                            <div class="image">
+                                <img src="img/device-2.png" alt="device 2">
+                                <ul class="icons-item">
+                                    <li><button class="square-icon"></button></li>
+                                    <li><button class="like-icon liked"></button></li>
+                                 </ul>
+                            </div>
+                            <div class="col-12">
+                                <div class="device-title">
+                                    <h2>#2 Device Name</h2>
+                                </div>
+                                <div class="description">
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                </div>
+                                <div class="type item-information">
+                                    <H4>TYPE: <span>Laptop</span></H4>
+                                </div>
+                                <div class="screen-size item-information">
+                                    <H4>SCREEN SIZE: <span>7 inches</span></H4>
+                                </div>
+                                <div class="ram item-information">
+                                    <H4>RAM: <span>1 GB</span></H4>
+                                </div>
+                                <div class="price">
+                                    <h2>$1250<span>99</span></h2>
+                                </div>
+                                <div class="product-quantity">
+                                    <button class="decrement">-</button>
+                                    <input  type="text" readonly value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <div class="button-products">
+                                    <button class="item-button more-details">MORE DETAILS</button>
+                                    <button class="item-button add-to-card">ADD TO CARD
+                                        <div class="basket-white"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="col-4">
+                        <div class="one-item">
+                            <div class="image">
+                                <img src="img/device-3.png" alt="device 3">
+                                <ul class="icons-item">
+                                    <li><button class="square-icon"></button></li>
+                                    <li><button class="like-icon"></button></li>
+                                 </ul>
+                            </div>
+                            <div class="col-12">
+                                <div class="device-title">
+                                    <h2>#3 Device Name</h2>
+                                </div>
+                                <div class="description">
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                </div>
+                                <div class="type item-information">
+                                    <H4>TYPE: <span>Laptop</span></H4>
+                                </div>
+                                <div class="screen-size item-information">
+                                    <H4>SCREEN SIZE: <span>7 inches</span></H4>
+                                </div>
+                                <div class="ram item-information">
+                                    <H4>RAM: <span>1 GB</span></H4>
+                                </div>
+                                <div class="price">
+                                    <h2>$399<span>55</span></h2>
+                                </div>
+                                <div class="product-quantity">
+                                    <button class="decrement">-</button>
+                                    <input  type="text" readonly value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <div class="button-products">
+                                    <button class="item-button more-details">MORE DETAILS</button>
+                                    <button class="item-button add-to-card">ADD TO CARD
+                                        <div class="basket-white"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="col-4">
+                        <div class="one-item">
+                            <div class="image add">
+                                <img src="img/device-4.png" alt="device 4">
+                                <ul class="icons-item">
+                                    <li><button class="square-icon"></button></li>
+                                    <li><button class="like-icon"></button></li>
+                                 </ul>
+                            </div>
+                            <div class="col-12">
+                                <div class="device-title">
+                                    <h2>#1 Device Name</h2>
+                                </div>
+                                <div class="description">
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                </div>
+                                <div class="type item-information">
+                                    <H4>TYPE: <span>Laptop</span></H4>
+                                </div>
+                                <div class="screen-size item-information">
+                                    <H4>SCREEN SIZE: <span>7 inches</span></H4>
+                                </div>
+                                <div class="ram item-information">
+                                    <H4>RAM: <span>1 GB</span></H4>
+                                </div>
+                                <div class="price">
+                                    <h2>$599<span>25</span></h2>
+                                </div>
+                                <div class="product-quantity">
+                                    <button class="decrement">-</button>
+                                    <input  type="text" readonly value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <div class="button-products">
+                                    <button class="item-button more-details">MORE DETAILS</button>
+                                    <button class="item-button add-to-card">ADD TO CARD
+                                        <div class="basket-white"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 5 -->
+                    <div class="col-4">
+                        <div class="one-item">
+                            <div class="image">
+                                <img src="img/device-5.png" alt="device 5">
+                                <ul class="icons-item">
+                                    <li><button class="square-icon"></button></li>
+                                    <li><button class="like-icon"></button></li>
+                                 </ul>
+                            </div>
+                            <div class="col-12">
+                                <div class="device-title">
+                                    <h2>#2 Device Name</h2>
+                                </div>
+                                <div class="description">
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                </div>
+                                <div class="type item-information">
+                                    <H4>TYPE: <span>Laptop</span></H4>
+                                </div>
+                                <div class="screen-size item-information">
+                                    <H4>SCREEN SIZE: <span>7 inches</span></H4>
+                                </div>
+                                <div class="ram item-information">
+                                    <H4>RAM: <span>1 GB</span></H4>
+                                </div>
+                                <div class="price">
+                                    <h2>$1250<span>99</span></h2>
+                                </div>
+                                <div class="product-quantity">
+                                    <button class="decrement">-</button>
+                                    <input  type="text" readonly value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <div class="button-products">
+                                    <button class="item-button more-details">MORE DETAILS</button>
+                                    <button class="item-button add-to-card">ADD TO CARD
+                                        <div class="basket-white"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 6 -->
+                    <div class="col-4">
+                        <div class="one-item">
+                            <div class="image">
+                                <img src="img/device-6.png" alt="device 6">
+                                <ul class="icons-item">
+                                    <li><button class="square-icon"></button></li>
+                                    <li><button class="like-icon"></button></li>
+                                 </ul>
+                            </div>
+                            <div class="col-12">
+                                <div class="device-title">
+                                    <h2>#3 Device Name</h2>
+                                </div>
+                                <div class="description">
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                </div>
+                                <div class="type item-information">
+                                    <H4>TYPE: <span>Laptop</span></H4>
+                                </div>
+                                <div class="screen-size item-information">
+                                    <H4>SCREEN SIZE: <span>7 inches</span></H4>
+                                </div>
+                                <div class="ram item-information">
+                                    <H4>RAM: <span>1 GB</span></H4>
+                                </div>
+                                <div class="price">
+                                    <h2>$399<span>50</span></h2>
+                                </div>
+                                <div class="product-quantity">
+                                    <button class="decrement">-</button>
+                                    <input  type="text" readonly value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <div class="button-products">
+                                    <button class="item-button more-details">MORE DETAILS</button>
+                                    <button class="item-button add-to-card">ADD TO CARD
+                                        <div class="basket-white"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 7 -->
+                    <div class="col-4">
+                        <div class="one-item">
+                            <div class="image">
+                                <img src="img/device-7.png" alt="device 7">
+                                <ul class="icons-item">
+                                   <li><button class="square-icon"></button></li>
+                                   <li><button class="like-icon"></button></li>
+                                </ul>
+                            </div>
+                            <div class="col-12">
+                                <div class="device-title">
+                                    <h2>#1 Device Name</h2>
+                                </div>
+                                <div class="description">
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                </div>
+                                <div class="type item-information">
+                                    <H4>TYPE: <span>Laptop</span></H4>
+                                </div>
+                                <div class="screen-size item-information">
+                                    <H4>SCREEN SIZE: <span>7 inches</span></H4>
+                                </div>
+                                <div class="ram item-information">
+                                    <H4>RAM: <span>1 GB</span></H4>
+                                </div>
+                                <div class="price">
+                                    <h2>$599<span>25</span></h2>
+                                </div>
+                                <div class="product-quantity">
+                                    <button class="decrement">-</button>
+                                    <input  type="text" readonly value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <div class="button-products">
+                                    <button class="item-button more-details">MORE DETAILS</button>
+                                    <button class="item-button add-to-card">ADD TO CARD
+                                        <div class="basket-white"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 8 -->
+                    <div class="col-4">
+                        <div class="one-item">
+                            <div class="image">
+                                <img src="img/device-5.png" alt="device 8">
+                                <ul class="icons-item">
+                                    <li><button class="square-icon"></button></li>
+                                    <li><button class="like-icon"></button></li>
+                                 </ul>
+                            </div>
+                            <div class="col-12">
+                                <div class="device-title">
+                                    <h2>#2 Device Name</h2>
+                                </div>
+                                <div class="description">
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                </div>
+                                <div class="type item-information">
+                                    <H4>TYPE: <span>Laptop</span></H4>
+                                </div>
+                                <div class="screen-size item-information">
+                                    <H4>SCREEN SIZE: <span>7 inches</span></H4>
+                                </div>
+                                <div class="ram item-information">
+                                    <H4>RAM: <span>1 GB</span></H4>
+                                </div>
+                                <div class="price">
+                                    <h2>$1250<span>99</span></h2>
+                                </div>
+                                <div class="product-quantity">
+                                    <button class="decrement">-</button>
+                                    <input  type="text" readonly value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <div class="button-products">
+                                    <button class="item-button more-details">MORE DETAILS</button>
+                                    <button class="item-button add-to-card">ADD TO CARD
+                                        <div class="basket-white"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 9 -->
+                    <div class="col-4">
+                        <div class="one-item">
+                            <div class="image">
+                                <img src="img/device-6.png" alt="device 9">
+                                <ul class="icons-item">
+                                    <li><button class="square-icon"></button></li>
+                                    <li><button class="like-icon"></button></li>
+                                 </ul>
+                            </div>
+                            <div class="col-12">
+                                <div class="device-title">
+                                    <h2>#3 Device Name</h2>
+                                </div>
+                                <div class="description">
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                </div>
+                                <div class="type item-information">
+                                    <H4>TYPE: <span>Laptop</span></H4>
+                                </div>
+                                <div class="screen-size item-information">
+                                    <H4>SCREEN SIZE: <span>7 inches</span></H4>
+                                </div>
+                                <div class="ram item-information">
+                                    <H4>RAM: <span>1 GB</span></H4>
+                                </div>
+                                <div class="price">
+                                    <h2>$399<span>50</span></h2>
+                                </div>
+                                <div class="product-quantity">
+                                    <button class="decrement">-</button>
+                                    <input  type="text" readonly value="1">
+                                    <button class="increment">+</button>
+                                </div>
+                                <div class="button-products">
+                                    <button class="item-button more-details">MORE DETAILS</button>
+                                    <button class="item-button add-to-card" >ADD TO CARD
+                                        <div class="basket-white"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="load-more a2">
+                            <button>
+                                <a href="#">Load more...</a>
+                            </button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+   </main>
+   <!-- footer -->
+   <footer class="footer">
+        <div class="row">
+            <div class="copyright">© Copyright 2017</div>
+            <div class="container"></div>
+        </div>
+   </footer> 
+   <div class="modal hide">
+        <div class="modal-block">
+            <form action="">
+                <div class="btn-close">x</div>
+                <div class="clear"></div>
+                <h3>please call for more details</h3>
+                <div class="form-field">
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="form-field">
+                    <input type="text" placeholder="Your phone"></div>
+                <button>Please call</button>
+            </form>
+        </div>
+   </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>			
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="app.js">
+   </script>
+</body>
+</html>
